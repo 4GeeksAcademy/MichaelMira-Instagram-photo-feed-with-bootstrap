@@ -5,74 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="fa-brands fa-instagram mr-1"></i>
-            <span>Instagram</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-center">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  <span class="btn btn-success">
-                    Create a new post
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                   <i class="fa-solid fa-gear"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
+      <div class="container-fluid">
+        <span class="navbar-brand text-black">
+          <!--  --> WHY IS FONT NOT WORKING
+          <p class="text-lowercase fw-light" style="font-family:Pacifico"><i class="fab fa-instagram "> Instagram</i></p>
+          <!--  --> WHY IS FONT NOT WORKING
+        </span>
+        <form>
+          <div class="row">
+            <div class="col-md-auto">
+              <button type="button" class="btn btn-success text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create new Post
+              </button>
+
+            </div>
+            <div class="col-md-auto">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                      <li><a class="dropdown-item" href="#">Security and Data</a></li>
+                      <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+    <!--modal (for navbar button "Create new post")-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group mb-2 mt-0">
+              <form class="mb-1">
+                <label for="exampleInputEmail1">Caption:</label>
+              </form>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add the caption of your post here">
+            </div>
+            <i class="fas fa-camera fa-1x border btn"></i>
+            <i class="fas fa-map-marker-alt fa-1x border btn"></i>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
           </div>
         </div>
-    </nav>
-    <div class="row">
-        <div class="col-4">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+
+  </nav>
+  <div class="container-fluid p-0">
+    <form class="d-flex justify-content-center">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+        </li>
+      </ul>
+    </form>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+        <div class="row">
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+          <div class="col border p-0">
+            <img src="https://picsum.photos/508/508" </img>
+          </div>
+        </div>
+        
+
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+    </div>
+  </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
